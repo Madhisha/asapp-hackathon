@@ -1,4 +1,4 @@
-"# Airline Customer Support Chatbot
+# Airline Customer Support Chatbot
 
 An intelligent airline customer support chatbot using RAG (Retrieval Augmented Generation) with LLM integration. The bot answers customer queries using airline policies and maintains context across conversations.
 
