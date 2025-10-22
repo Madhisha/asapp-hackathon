@@ -10,6 +10,10 @@ Watch the chatbot in action: [Demo Video](https://drive.google.com/file/d/1AllZ5
 
 View the project presentation: [Canva Presentation](https://www.canva.com/design/DAG2hcBuGfA/X6ph-GkjB4y7mFWgH3MTig/edit?utm_content=DAG2hcBuGfA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
+## System Architecture
+
+![Airline Chatbot Architecture](airline%20architecture.png)
+
 ## Features
 
 - **RAG-based Policy Retrieval**: Uses FAISS vector search to find relevant policies
