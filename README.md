@@ -2,6 +2,14 @@
 
 An intelligent airline customer support chatbot using RAG (Retrieval Augmented Generation) with LLM integration. The bot answers customer queries using airline policies and maintains context across conversations.
 
+## Demo Video
+
+Watch the chatbot in action: [Demo Video](https://drive.google.com/file/d/1AllZ5EFo7e0tRseJQyHf4hkG6pFpS3v8/view?usp=sharing)
+
+## Presentation
+
+View the project presentation: [Canva Presentation](https://www.canva.com/design/DAG2hcBuGfA/X6ph-GkjB4y7mFWgH3MTig/edit?utm_content=DAG2hcBuGfA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## Features
 
 - **RAG-based Policy Retrieval**: Uses FAISS vector search to find relevant policies
@@ -35,7 +43,10 @@ ollama (Python client)
 ## Data Sources
 
 - **Airline Policies**: JetBlue airline policies dataset
-  - Source: Custom parsed airline policy documents
+  - Source: JetBlue official website (custom parsed)
+    - Fares & Policies: https://www.jetblue.com/flying-with-us/our-fares
+    - Pet Travel: https://www.jetblue.com/traveling-together/traveling-with-pets
+  - Parsing: Custom web scraping and policy extraction using `policy_parser.py`
   - Format: JSONL (JSON Lines) with question-answer pairs
   - File: `policies.jsonl` (263 Q&A pairs)
   - Sections: Baggage, Pet Travel, Cancellations, Fares, Seat Selection, etc.
@@ -211,5 +222,3 @@ Bot: I'm an airline customer support assistant. I can only help with flight book
 - **Distance < 1.0**: Good match
 - **Distance < 2.0**: Acceptable match (used as threshold)
 - **Distance > 2.0**: Poor match (filtered out)
-
-
